@@ -33,7 +33,7 @@ export interface ListViewPropsType {
   /** The following is new added and does not exist in react-native */
   contentContainerStyle?: React.CSSProperties;
   renderBodyComponent?: () => React.ReactElement<any>;
-  renderSectionWrapper?: () => React.ReactElement<any>;
+  renderSectionWrapper?: (sectionID: string | number) => React.ReactElement<any>;
   renderSectionBodyWrapper?: () => React.ReactElement<any>;
   useBodyScroll?: boolean;
   pullToRefresh?: React.ReactNode;
